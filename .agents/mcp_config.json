@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "indian-paper-trader": {
+      "command": "python",
+      "args": ["indian_paper_mcp.py"],
+      "cwd": ".",
+      "env": {
+        "ANGEL_API_KEY": "${ANGEL_API_KEY}",
+        "ANGEL_CLIENT_ID": "${ANGEL_CLIENT_ID}",
+        "ANGEL_PIN": "${ANGEL_PIN}",
+        "ANGEL_TOTP_SECRET": "${ANGEL_TOTP_SECRET}"
+      },
+      "timeoutSeconds": 120,
+      "disabled": false,
+      "enabledTools": [
+        "search_nse_bse_scrip",
+        "get_market_snapshot",
+        "place_paper_order",
+        "evaluate_open_positions",
+        "reflect_and_update_strategy",
+        "run_historical_replay_sim"
+      ]
+    }
+  }
+}
