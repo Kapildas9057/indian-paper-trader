@@ -204,7 +204,12 @@ def run_direct_cook_cycle(run_ml: bool = True) -> Dict[str, Any]:
     )
     report_md = render_markdown_dashboard(result)
     (mlp.LOGS_DIR / "latest_report.md").write_text(report_md, encoding="utf-8")
-    mlp.log_event("Completed 4-Phase COOK cycle + ML Prediction save; wrote logs/latest_report.md")
+    try:
+        import export_realtime_static as rt_export
+        rt_export.generate_realtime_payload()
+    except Exception as exc:
+        mlp.log_event(f"Warning: static export failed: {exc}", level="WARNING")
+    mlp.log_event("Completed 4-Phase COOK cycle + ML Prediction save; wrote logs/latest_report.md & public/live_data.json")
     return result
 
 

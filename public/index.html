@@ -1111,34 +1111,53 @@ async function syncRealtimeQuotes() {
     }
   } catch (_) {}
 
-  // 2. Load static exported real-time snapshot ./live_data.json (Firebase Hosting / Render Static)
-  if (!appState) {
+  // 2. Always fetch latest ./live_data.json snapshot (with cache-busting) so new bot trades/predictions appear
+  try {
     const snapResp = await fetch('./live_data.json?t=' + Date.now(), { cache: 'no-store' });
-    appState = await snapResp.json();
-  }
+    if (snapResp.ok) {
+      appState = await snapResp.json();
+    }
+  } catch (_) {}
 
-  // 3. Attempt direct browser live quote refresh for invested stocks via CORS proxy / Yahoo chart JSON
+  if (!appState) return;
+
+  // 3. Fetch live real-time NSE quotes in browser (Direct + CORS-safe fallback relay)
   const tickers = (appState.watchlist || []).map(w => w.yf_ticker);
   const priceMap = {};
-  await Promise.all(tickers.map(async (tkr) => {
-    try {
-      const url = `https://query1.finance.yahoo.com/v8/finance/chart/${tkr}?interval=5m&range=1d`;
-      const r = await fetch(url);
-      if (r.ok) {
+
+  async function fetchLiveTickerPrice(tkr) {
+    const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${tkr}?interval=5m&range=1d`;
+    const candidates = [
+      yahooUrl,
+      `https://api.allorigins.win/raw?url=${encodeURIComponent(yahooUrl)}`
+    ];
+    for (const url of candidates) {
+      try {
+        const r = await fetch(url, { cache: 'no-store' });
+        if (!r.ok) continue;
         const j = await r.json();
-        const meta = j.chart && j.chart.result && j.chart.result[0] && j.chart.result[0].meta;
+        const meta = j && j.chart && j.chart.result && j.chart.result[0] && j.chart.result[0].meta;
         if (meta && meta.regularMarketPrice) {
-          priceMap[tkr] = Number(meta.regularMarketPrice.toFixed(2));
+          return Number(Number(meta.regularMarketPrice).toFixed(2));
         }
-      }
-    } catch (_) {}
+      } catch (_) {}
+    }
+    return null;
+  }
+
+  await Promise.all(tickers.map(async (tkr) => {
+    const px = await fetchLiveTickerPrice(tkr);
+    if (px && px > 0) {
+      priceMap[tkr] = px;
+    }
   }));
 
+  const nowTime = new Date().toLocaleTimeString('en-IN', { hour12: false });
   if (Object.keys(priceMap).length > 0) {
     recalculatePortfolioFromLivePrices(priceMap);
-    statusEl.textContent = 'NSE LIVE • DIRECT TICKER';
+    statusEl.textContent = `NSE LIVE • TICKER (${nowTime})`;
   } else {
-    statusEl.textContent = 'NSE LIVE • SNAPSHOT FEED';
+    statusEl.textContent = `NSE LIVE • SYNCED (${nowTime})`;
   }
   renderAll();
 }

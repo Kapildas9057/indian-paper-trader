@@ -1,0 +1,40 @@
+name: Autonomous NSE Tracker & Prediction Verifier
+
+on:
+  schedule:
+    # Runs every 30 minutes during NSE market hours (09:15 - 15:30 IST / 03:45 - 10:00 UTC, Mon-Fri)
+    - cron: "*/30 3-10 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  track-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install "mcp[cli]" smartapi-python pyotp pandas numpy yfinance requests logzero websocket-client
+
+      - name: Run 4-Phase Autonomous Trading Cycle, ML Forecast & Static Feed Export
+        run: |
+          python autonomous_runner.py --mode direct
+          python export_realtime_static.py
+
+      - name: Commit updated ledger, predictions, logs & live_data.json
+        run: |
+          git config user.name "IndianPaperTrader Bot"
+          git config user.email "bot@indianpapertrader.local"
+          git add paper_ledger.db strategy_config.json MEMORY.md public/live_data.json predictions/ logs/
+          git diff --staged --quiet || git commit -m "chore(auto): update live NSE portfolio, ML predictions, and logs"
+          git push

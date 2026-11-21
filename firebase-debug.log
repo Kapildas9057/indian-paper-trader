@@ -1,0 +1,132 @@
+[debug] [2026-11-21T01:44:43.868Z] ----------------------------------------------------------------------
+[debug] [2026-11-21T01:44:43.872Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:indian-paper-trader-nse --project ecoshift-007
+[debug] [2026-11-21T01:44:43.872Z] CLI Version:   15.15.0
+[debug] [2026-11-21T01:44:43.872Z] Platform:      win32
+[debug] [2026-11-21T01:44:43.872Z] Node Version:  v24.15.0
+[debug] [2026-11-21T01:44:43.872Z] Time:          Sat Nov 21 2026 07:14:43 GMT+0530 (India Standard Time)
+[debug] [2026-11-21T01:44:43.873Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-11-21T01:45:00.474Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-11-21T01:45:00.474Z] > authorizing via signed-in user (kd850539@gmail.com)
+[debug] [2026-11-21T01:45:00.475Z] [iam] checking project ecoshift-007 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-11-21T01:45:00.477Z] Checked if tokens are valid: false, expires at: 1795182471786
+[debug] [2026-11-21T01:45:00.477Z] Checked if tokens are valid: false, expires at: 1795182471786
+[debug] [2026-11-21T01:45:00.477Z] > refreshing access token with scopes: []
+[debug] [2026-11-21T01:45:00.479Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-11-21T01:45:00.479Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-11-21T01:45:00.647Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-11-21T01:45:00.647Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-11-21T01:45:00.677Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecoshift-007:testIamPermissions [none]
+[debug] [2026-11-21T01:45:00.678Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecoshift-007:testIamPermissions  x-goog-user-project=ecoshift-007
+[debug] [2026-11-21T01:45:00.678Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecoshift-007:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-21T01:45:02.049Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecoshift-007:testIamPermissions 200
+[debug] [2026-11-21T01:45:02.049Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecoshift-007:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-21T01:45:02.050Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:02.050Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:02.051Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecoshift-007 [none]
+[debug] [2026-11-21T01:45:02.795Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecoshift-007 200
+[debug] [2026-11-21T01:45:02.795Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecoshift-007 {"projectId":"ecoshift-007","projectNumber":"588164267129","displayName":"ECOSHIFT","name":"projects/ecoshift-007","resources":{"hostingSite":"ecoshift-007"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_efa7cd7a-fee1-4376-a4bb-a31b1e1c8eeb"}
+[info] 
+[info] === Deploying to 'ecoshift-007'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-11-21T01:45:02.813Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:02.814Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:02.814Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/indian-paper-trader-nse/versions [none]
+[debug] [2026-11-21T01:45:02.814Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/indian-paper-trader-nse/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-11-21T01:45:04.477Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/indian-paper-trader-nse/versions 200
+[debug] [2026-11-21T01:45:04.477Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/indian-paper-trader-nse/versions {"name":"projects/588164267129/sites/indian-paper-trader-nse/versions/121576289f2a02b1","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[indian-paper-trader-nse]: beginning deploy... 
+[info] i  hosting[indian-paper-trader-nse]: found 2 files in public 
+[debug] [2026-11-21T01:45:04.496Z] [hosting] uploading with 200 concurrency
+[debug] [2026-11-21T01:45:04.510Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:04.510Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:04.531Z] [hosting] hash cache [cHVibGlj] stored for 2 files
+[debug] [2026-11-21T01:45:04.531Z] [hosting][hash queue][FINAL] {"max":7,"min":4,"avg":5.5,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":29}
+[debug] [2026-11-21T01:45:04.531Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/588164267129/sites/indian-paper-trader-nse/versions/121576289f2a02b1:populateFiles [none]
+[debug] [2026-11-21T01:45:04.531Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/588164267129/sites/indian-paper-trader-nse/versions/121576289f2a02b1:populateFiles {"files":{"/index.html":"de53681f372ff959343639f948aa6d22ed09804a7d9927f149a34a40b7c478ba","/live_data.json":"11cbc2f2d58ce99f3341b69b2eddf91ccc02be7ac2b19d84f3ddb13bae679a90"}}
+[debug] [2026-11-21T01:45:05.213Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/588164267129/sites/indian-paper-trader-nse/versions/121576289f2a02b1:populateFiles 200
+[debug] [2026-11-21T01:45:05.214Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/588164267129/sites/indian-paper-trader-nse/versions/121576289f2a02b1:populateFiles {"uploadRequiredHashes":["de53681f372ff959343639f948aa6d22ed09804a7d9927f149a34a40b7c478ba","11cbc2f2d58ce99f3341b69b2eddf91ccc02be7ac2b19d84f3ddb13bae679a90"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/indian-paper-trader-nse/versions/121576289f2a02b1/files"}
+[debug] [2026-11-21T01:45:05.214Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:05.214Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:05.215Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:05.215Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:05.215Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/indian-paper-trader-nse/versions/121576289f2a02b1/files/de53681f372ff959343639f948aa6d22ed09804a7d9927f149a34a40b7c478ba [none]
+[debug] [2026-11-21T01:45:05.215Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/indian-paper-trader-nse/versions/121576289f2a02b1/files/de53681f372ff959343639f948aa6d22ed09804a7d9927f149a34a40b7c478ba [stream]
+[debug] [2026-11-21T01:45:05.217Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/indian-paper-trader-nse/versions/121576289f2a02b1/files/11cbc2f2d58ce99f3341b69b2eddf91ccc02be7ac2b19d84f3ddb13bae679a90 [none]
+[debug] [2026-11-21T01:45:05.217Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/indian-paper-trader-nse/versions/121576289f2a02b1/files/11cbc2f2d58ce99f3341b69b2eddf91ccc02be7ac2b19d84f3ddb13bae679a90 [stream]
+[debug] [2026-11-21T01:45:05.220Z] [hosting][populate queue][FINAL] {"max":705,"min":705,"avg":705,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":710}
+[debug] [2026-11-21T01:45:05.220Z] [hosting] uploads queued: 2
+[info] i  hosting: uploading new files [0/2] (0%) 
+[debug] [2026-11-21T01:45:06.948Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/indian-paper-trader-nse/versions/121576289f2a02b1/files/de53681f372ff959343639f948aa6d22ed09804a7d9927f149a34a40b7c478ba 200
+[debug] [2026-11-21T01:45:06.948Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/indian-paper-trader-nse/versions/121576289f2a02b1/files/de53681f372ff959343639f948aa6d22ed09804a7d9927f149a34a40b7c478ba [stream]
+[debug] [2026-11-21T01:45:07.626Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/indian-paper-trader-nse/versions/121576289f2a02b1/files/11cbc2f2d58ce99f3341b69b2eddf91ccc02be7ac2b19d84f3ddb13bae679a90 200
+[debug] [2026-11-21T01:45:07.626Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/indian-paper-trader-nse/versions/121576289f2a02b1/files/11cbc2f2d58ce99f3341b69b2eddf91ccc02be7ac2b19d84f3ddb13bae679a90 [stream]
+[debug] [2026-11-21T01:45:07.626Z] [hosting][upload queue][FINAL] {"max":2412,"min":1734,"avg":2073,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":2412}
+[info] i  hosting: upload complete 
+[info] +  hosting[indian-paper-trader-nse]: file upload complete 
+[debug] [2026-11-21T01:45:07.627Z] [hosting] deploy completed after 3146ms
+[debug] [2026-11-21T01:45:07.627Z] [
+  {
+    "config": {
+      "site": "indian-paper-trader-nse",
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "headers": [
+        {
+          "source": "/live_data.json",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ]
+        }
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    "version": "projects/588164267129/sites/indian-paper-trader-nse/versions/121576289f2a02b1"
+  }
+]
+[info] i  hosting[indian-paper-trader-nse]: finalizing version... 
+[debug] [2026-11-21T01:45:07.629Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:07.629Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:07.629Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/indian-paper-trader-nse/versions/121576289f2a02b1 updateMask=status%2Cconfig
+[debug] [2026-11-21T01:45:07.629Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/indian-paper-trader-nse/versions/121576289f2a02b1 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}],"headers":[{"glob":"/live_data.json","headers":{"Cache-Control":"no-cache, no-store, must-revalidate","Access-Control-Allow-Origin":"*"}}]}}
+[debug] [2026-11-21T01:45:08.707Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/indian-paper-trader-nse/versions/121576289f2a02b1 200
+[debug] [2026-11-21T01:45:08.707Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/indian-paper-trader-nse/versions/121576289f2a02b1 {"name":"projects/588164267129/sites/indian-paper-trader-nse/versions/121576289f2a02b1","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, no-store, must-revalidate","Access-Control-Allow-Origin":"*"},"glob":"/live_data.json"}],"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-21T01:45:03.812776Z","createUser":{"email":"kd850539@gmail.com"},"finalizeTime":"2026-11-21T01:45:08.555200Z","finalizeUser":{"email":"kd850539@gmail.com"}}
+[debug] [2026-11-21T01:45:08.707Z] [hosting] finalized version for indian-paper-trader-nse:[object Object]
+[info] +  hosting[indian-paper-trader-nse]: version finalized 
+[info] i  hosting[indian-paper-trader-nse]: releasing new version... 
+[debug] [2026-11-21T01:45:08.708Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:08.708Z] Checked if tokens are valid: true, expires at: 1795229099648
+[debug] [2026-11-21T01:45:08.708Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/indian-paper-trader-nse/channels/live/releases versionName=projects%2F588164267129%2Fsites%2Findian-paper-trader-nse%2Fversions%2F121576289f2a02b1
+[debug] [2026-11-21T01:45:08.708Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/indian-paper-trader-nse/channels/live/releases {}
+[debug] [2026-11-21T01:45:09.660Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/indian-paper-trader-nse/channels/live/releases 200
+[debug] [2026-11-21T01:45:09.660Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/indian-paper-trader-nse/channels/live/releases {"name":"projects/588164267129/sites/indian-paper-trader-nse/channels/live/releases/1795225508848000","version":{"name":"projects/588164267129/sites/indian-paper-trader-nse/versions/121576289f2a02b1","status":"FINALIZED","config":{"headers":[{"headers":{"Access-Control-Allow-Origin":"*","Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"/live_data.json"}],"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-21T01:45:03.812776Z","createUser":{"email":"kd850539@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLk4lG44gdm-fKu2VVvCSIp2HsVwlJTzNl7yk7wIL7YuC_BUbvp"},"finalizeTime":"2026-11-21T01:45:08.555200Z","finalizeUser":{"email":"kd850539@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLk4lG44gdm-fKu2VVvCSIp2HsVwlJTzNl7yk7wIL7YuC_BUbvp"}},"type":"DEPLOY","releaseTime":"2026-11-21T01:45:08.848Z","releaseUser":{"email":"kd850539@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLk4lG44gdm-fKu2VVvCSIp2HsVwlJTzNl7yk7wIL7YuC_BUbvp"}}
+[debug] [2026-11-21T01:45:09.661Z] [hosting] release: {"name":"projects/588164267129/sites/indian-paper-trader-nse/channels/live/releases/1795225508848000","version":{"name":"projects/588164267129/sites/indian-paper-trader-nse/versions/121576289f2a02b1","status":"FINALIZED","config":{"headers":[{"headers":{"Access-Control-Allow-Origin":"*","Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"/live_data.json"}],"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-21T01:45:03.812776Z","createUser":{"email":"kd850539@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLk4lG44gdm-fKu2VVvCSIp2HsVwlJTzNl7yk7wIL7YuC_BUbvp"},"finalizeTime":"2026-11-21T01:45:08.555200Z","finalizeUser":{"email":"kd850539@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLk4lG44gdm-fKu2VVvCSIp2HsVwlJTzNl7yk7wIL7YuC_BUbvp"}},"type":"DEPLOY","releaseTime":"2026-11-21T01:45:08.848Z","releaseUser":{"email":"kd850539@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLk4lG44gdm-fKu2VVvCSIp2HsVwlJTzNl7yk7wIL7YuC_BUbvp"}}
+[info] +  hosting[indian-paper-trader-nse]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/ecoshift-007/overview
+[info] Hosting URL: https://indian-paper-trader-nse.web.app
+[debug] [2026-11-21T01:45:14.735Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:309:49)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+[error] 
+[error] Error: An unexpected error has occurred.
