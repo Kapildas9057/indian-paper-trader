@@ -1,419 +1,50 @@
 {
-  "generated_at": "2026-11-20T17:59:45+05:30",
-  "prediction_date": "2026-11-20",
-  "target_session_date": "2026-11-23",
+  "generated_at": "2026-11-23T17:20:12+05:30",
+  "prediction_date": "2026-11-23",
+  "target_session_date": "2026-11-24",
   "total_symbols_predicted": 6,
-  "avg_test_directional_accuracy_pct": 54.08,
-  "avg_test_mae_pct": 1.3433,
+  "avg_test_directional_accuracy_pct": 50.34,
+  "avg_test_mae_pct": 1.3822,
   "predictions": [
     {
       "symbol": "RELIANCE-EQ",
       "token": "2885",
       "exchange": "NSE",
       "data_source": "yfinance_daily:RELIANCE.NS + yfinance:RELIANCE.NS",
-      "prediction_date": "2026-11-20",
-      "target_session_date": "2026-11-23",
-      "base_close": 1377.5,
-      "predicted_return_pct": -0.102,
-      "predicted_next_close": 1376.09,
-      "predicted_change_inr": -1.41,
+      "prediction_date": "2026-11-23",
+      "target_session_date": "2026-11-24",
+      "base_close": 1351.0,
+      "predicted_return_pct": -0.071,
+      "predicted_next_close": 1350.04,
+      "predicted_change_inr": -0.96,
       "predicted_direction": "NEUTRAL",
-      "confidence_pct": 66.1,
+      "confidence_pct": 67.2,
       "recommended_action": "WAIT_FOR_VWAP_BREAKOUT",
-      "predicted_stop_loss": 1343.12,
-      "predicted_take_profit": 1429.07,
-      "selected_model": "GradientBoostedStumps(n=25, lr=0.07)",
-      "test_mae_pct": 1.2695,
-      "test_rmse_pct": 2.1191,
-      "test_dir_acc_pct": 48.98,
-      "test_mae_ci95": {
-        "low_pct": 0.902,
-        "high_pct": 1.8781
-      },
-      "today_features": {
-        "ret_1d": 0.1381,
-        "ret_3d": 0.7681,
-        "ret_5d": 2.8215,
-        "rsi_14": 75.1651,
-        "ema_spread_pct": 3.1231,
-        "price_vs_ema21_pct": 5.4741,
-        "atr_pct": 2.08,
-        "vol_ratio_10d": 0.8383,
-        "high_low_range_pct": 1.9528,
-        "close_loc_in_range": 0.7955
-      },
-      "data_audit": {
-        "raw_row_count": 248,
-        "usable_row_count": 243,
-        "warmup_rows_removed": 5,
-        "null_frequency_before_handling": {
-          "ret_1d": 1,
-          "ret_3d": 3,
-          "ret_5d": 5,
-          "rsi_14": 0,
-          "ema_spread_pct": 0,
-          "price_vs_ema21_pct": 0,
-          "atr_pct": 0,
-          "vol_ratio_10d": 0,
-          "high_low_range_pct": 0,
-          "close_loc_in_range": 0
-        },
-        "null_frequency_after_handling": {
-          "ret_1d": 0,
-          "ret_3d": 0,
-          "ret_5d": 0,
-          "rsi_14": 0,
-          "ema_spread_pct": 0,
-          "price_vs_ema21_pct": 0,
-          "atr_pct": 0,
-          "vol_ratio_10d": 0,
-          "high_low_range_pct": 0,
-          "close_loc_in_range": 0
-        },
-        "missing_value_policy": "Removed initial 5 warmup rows for 5-day momentum lag; forward-filled any isolated feature gaps and imputed 0.0 neutral return where needed. Final row has target_next_ret_pct=NaN because it represents today's live bar predicting tomorrow.",
-        "stationarity_audit": {
-          "raw_close_lag1_autocorr": 0.9793,
-          "return_pct_lag1_autocorr": 0.0037,
-          "stationary_target_confirmed": true,
-          "conclusion": "Raw price series is non-stationary (near-unit root autocorr); modeling percentage return target_next_ret_pct stabilizes mean and variance."
-        }
-      },
-      "model_comparison": {
-        "chronological_split": {
-          "train_rows": 145,
-          "val_rows": 48,
-          "test_rows": 49,
-          "train_period": "2025-11-27 to 2026-07-01",
-          "val_period": "2026-07-02 to 2026-09-07",
-          "test_period": "2026-09-08 to 2026-11-19"
-        },
-        "validation_metrics": {
-          "NaiveDriftBaseline": {
-            "mae_pct": 0.9395,
-            "rmse_pct": 1.1948,
-            "directional_accuracy_pct": 47.92
-          },
-          "RidgeRegression(alpha=40.0)": {
-            "mae_pct": 0.915,
-            "rmse_pct": 1.1527,
-            "directional_accuracy_pct": 56.25
-          },
-          "GradientBoostedStumps(n=25)": {
-            "mae_pct": 0.9119,
-            "rmse_pct": 1.1851,
-            "directional_accuracy_pct": 50.0
-          }
-        },
-        "test_metrics": {
-          "NaiveDriftBaseline": {
-            "mae_pct": 1.2408,
-            "rmse_pct": 2.1092,
-            "directional_accuracy_pct": 42.86
-          },
-          "RidgeRegression(alpha=40.0)": {
-            "mae_pct": 1.3886,
-            "rmse_pct": 2.1743,
-            "directional_accuracy_pct": 51.02
-          },
-          "GradientBoostedStumps(n=25)": {
-            "mae_pct": 1.2695,
-            "rmse_pct": 2.1191,
-            "directional_accuracy_pct": 48.98
-          }
-        },
-        "selected_model": "GradientBoostedStumps(n=25, lr=0.07)",
-        "selected_test_mae_ci95": {
-          "low_pct": 0.902,
-          "high_pct": 1.8781
-        }
-      },
-      "prediction_id": 13
-    },
-    {
-      "symbol": "TCS-EQ",
-      "token": "11536",
-      "exchange": "NSE",
-      "data_source": "yfinance_daily:TCS.NS + yfinance:TCS.NS",
-      "prediction_date": "2026-11-20",
-      "target_session_date": "2026-11-23",
-      "base_close": 2376.2,
-      "predicted_return_pct": -0.176,
-      "predicted_next_close": 2372.02,
-      "predicted_change_inr": -4.18,
-      "predicted_direction": "DOWN",
-      "confidence_pct": 70.2,
-      "recommended_action": "AVOID_LONG_OR_SHORT_INTRADAY",
-      "predicted_stop_loss": 2474.78,
-      "predicted_take_profit": 2244.76,
-      "selected_model": "GradientBoostedStumps(n=15, lr=0.07)",
-      "test_mae_pct": 1.3743,
-      "test_rmse_pct": 1.9563,
-      "test_dir_acc_pct": 59.18,
-      "test_mae_ci95": {
-        "low_pct": 1.0103,
-        "high_pct": 1.8034
-      },
-      "today_features": {
-        "ret_1d": 1.43,
-        "ret_3d": -1.2632,
-        "ret_5d": -1.3001,
-        "rsi_14": 47.3441,
-        "ema_spread_pct": -0.1661,
-        "price_vs_ema21_pct": -1.2937,
-        "atr_pct": 2.7658,
-        "vol_ratio_10d": 1.0223,
-        "high_low_range_pct": 4.1158,
-        "close_loc_in_range": 0.6053
-      },
-      "data_audit": {
-        "raw_row_count": 248,
-        "usable_row_count": 243,
-        "warmup_rows_removed": 5,
-        "null_frequency_before_handling": {
-          "ret_1d": 1,
-          "ret_3d": 3,
-          "ret_5d": 5,
-          "rsi_14": 0,
-          "ema_spread_pct": 0,
-          "price_vs_ema21_pct": 0,
-          "atr_pct": 0,
-          "vol_ratio_10d": 0,
-          "high_low_range_pct": 0,
-          "close_loc_in_range": 0
-        },
-        "null_frequency_after_handling": {
-          "ret_1d": 0,
-          "ret_3d": 0,
-          "ret_5d": 0,
-          "rsi_14": 0,
-          "ema_spread_pct": 0,
-          "price_vs_ema21_pct": 0,
-          "atr_pct": 0,
-          "vol_ratio_10d": 0,
-          "high_low_range_pct": 0,
-          "close_loc_in_range": 0
-        },
-        "missing_value_policy": "Removed initial 5 warmup rows for 5-day momentum lag; forward-filled any isolated feature gaps and imputed 0.0 neutral return where needed. Final row has target_next_ret_pct=NaN because it represents today's live bar predicting tomorrow.",
-        "stationarity_audit": {
-          "raw_close_lag1_autocorr": 0.9909,
-          "return_pct_lag1_autocorr": -0.0558,
-          "stationary_target_confirmed": true,
-          "conclusion": "Raw price series is non-stationary (near-unit root autocorr); modeling percentage return target_next_ret_pct stabilizes mean and variance."
-        }
-      },
-      "model_comparison": {
-        "chronological_split": {
-          "train_rows": 145,
-          "val_rows": 48,
-          "test_rows": 49,
-          "train_period": "2025-11-27 to 2026-07-01",
-          "val_period": "2026-07-02 to 2026-09-07",
-          "test_period": "2026-09-08 to 2026-11-19"
-        },
-        "validation_metrics": {
-          "NaiveDriftBaseline": {
-            "mae_pct": 1.5424,
-            "rmse_pct": 2.0339,
-            "directional_accuracy_pct": 52.08
-          },
-          "RidgeRegression(alpha=40.0)": {
-            "mae_pct": 1.7166,
-            "rmse_pct": 2.2954,
-            "directional_accuracy_pct": 52.08
-          },
-          "GradientBoostedStumps(n=15)": {
-            "mae_pct": 1.53,
-            "rmse_pct": 2.0873,
-            "directional_accuracy_pct": 54.17
-          }
-        },
-        "test_metrics": {
-          "NaiveDriftBaseline": {
-            "mae_pct": 1.3603,
-            "rmse_pct": 1.947,
-            "directional_accuracy_pct": 59.18
-          },
-          "RidgeRegression(alpha=40.0)": {
-            "mae_pct": 1.3817,
-            "rmse_pct": 1.9837,
-            "directional_accuracy_pct": 48.98
-          },
-          "GradientBoostedStumps(n=15)": {
-            "mae_pct": 1.3743,
-            "rmse_pct": 1.9563,
-            "directional_accuracy_pct": 59.18
-          }
-        },
-        "selected_model": "GradientBoostedStumps(n=15, lr=0.07)",
-        "selected_test_mae_ci95": {
-          "low_pct": 1.0103,
-          "high_pct": 1.8034
-        }
-      },
-      "prediction_id": 14
-    },
-    {
-      "symbol": "HDFCBANK-EQ",
-      "token": "1333",
-      "exchange": "NSE",
-      "data_source": "yfinance_daily:HDFCBANK.NS + yfinance:HDFCBANK.NS",
-      "prediction_date": "2026-11-20",
-      "target_session_date": "2026-11-23",
-      "base_close": 846.0,
-      "predicted_return_pct": 0.165,
-      "predicted_next_close": 847.4,
-      "predicted_change_inr": 1.4,
-      "predicted_direction": "UP",
-      "confidence_pct": 65.8,
-      "recommended_action": "BUY_ON_OPEN_OR_HOLD",
-      "predicted_stop_loss": 819.4,
-      "predicted_take_profit": 881.46,
-      "selected_model": "GradientBoostedStumps(n=60, lr=0.07)",
-      "test_mae_pct": 1.4582,
-      "test_rmse_pct": 1.7735,
-      "test_dir_acc_pct": 46.94,
-      "test_mae_ci95": {
-        "low_pct": 1.2152,
-        "high_pct": 1.7409
-      },
-      "today_features": {
-        "ret_1d": 2.9448,
-        "ret_3d": 3.81,
-        "ret_5d": 5.2239,
-        "rsi_14": 77.9543,
-        "ema_spread_pct": 3.955,
-        "price_vs_ema21_pct": 9.1346,
-        "atr_pct": 2.0963,
-        "vol_ratio_10d": 1.6141,
-        "high_low_range_pct": 4.1194,
-        "close_loc_in_range": 0.8752
-      },
-      "data_audit": {
-        "raw_row_count": 248,
-        "usable_row_count": 243,
-        "warmup_rows_removed": 5,
-        "null_frequency_before_handling": {
-          "ret_1d": 1,
-          "ret_3d": 3,
-          "ret_5d": 5,
-          "rsi_14": 0,
-          "ema_spread_pct": 0,
-          "price_vs_ema21_pct": 0,
-          "atr_pct": 0,
-          "vol_ratio_10d": 0,
-          "high_low_range_pct": 0,
-          "close_loc_in_range": 0
-        },
-        "null_frequency_after_handling": {
-          "ret_1d": 0,
-          "ret_3d": 0,
-          "ret_5d": 0,
-          "rsi_14": 0,
-          "ema_spread_pct": 0,
-          "price_vs_ema21_pct": 0,
-          "atr_pct": 0,
-          "vol_ratio_10d": 0,
-          "high_low_range_pct": 0,
-          "close_loc_in_range": 0
-        },
-        "missing_value_policy": "Removed initial 5 warmup rows for 5-day momentum lag; forward-filled any isolated feature gaps and imputed 0.0 neutral return where needed. Final row has target_next_ret_pct=NaN because it represents today's live bar predicting tomorrow.",
-        "stationarity_audit": {
-          "raw_close_lag1_autocorr": 0.9917,
-          "return_pct_lag1_autocorr": 0.0372,
-          "stationary_target_confirmed": true,
-          "conclusion": "Raw price series is non-stationary (near-unit root autocorr); modeling percentage return target_next_ret_pct stabilizes mean and variance."
-        }
-      },
-      "model_comparison": {
-        "chronological_split": {
-          "train_rows": 145,
-          "val_rows": 48,
-          "test_rows": 49,
-          "train_period": "2025-11-27 to 2026-07-01",
-          "val_period": "2026-07-02 to 2026-09-07",
-          "test_period": "2026-09-08 to 2026-11-19"
-        },
-        "validation_metrics": {
-          "NaiveDriftBaseline": {
-            "mae_pct": 0.9216,
-            "rmse_pct": 1.2929,
-            "directional_accuracy_pct": 58.33
-          },
-          "RidgeRegression(alpha=40.0)": {
-            "mae_pct": 0.9961,
-            "rmse_pct": 1.3469,
-            "directional_accuracy_pct": 50.0
-          },
-          "GradientBoostedStumps(n=60)": {
-            "mae_pct": 0.8661,
-            "rmse_pct": 1.2326,
-            "directional_accuracy_pct": 70.83
-          }
-        },
-        "test_metrics": {
-          "NaiveDriftBaseline": {
-            "mae_pct": 1.3875,
-            "rmse_pct": 1.6713,
-            "directional_accuracy_pct": 44.9
-          },
-          "RidgeRegression(alpha=40.0)": {
-            "mae_pct": 1.4663,
-            "rmse_pct": 1.7816,
-            "directional_accuracy_pct": 44.9
-          },
-          "GradientBoostedStumps(n=60)": {
-            "mae_pct": 1.4582,
-            "rmse_pct": 1.7735,
-            "directional_accuracy_pct": 46.94
-          }
-        },
-        "selected_model": "GradientBoostedStumps(n=60, lr=0.07)",
-        "selected_test_mae_ci95": {
-          "low_pct": 1.2152,
-          "high_pct": 1.7409
-        }
-      },
-      "prediction_id": 15
-    },
-    {
-      "symbol": "INFY-EQ",
-      "token": "1594",
-      "exchange": "NSE",
-      "data_source": "yfinance_daily:INFY.NS + yfinance:INFY.NS",
-      "prediction_date": "2026-11-20",
-      "target_session_date": "2026-11-23",
-      "base_close": 1098.0,
-      "predicted_return_pct": -0.268,
-      "predicted_next_close": 1095.06,
-      "predicted_change_inr": -2.94,
-      "predicted_direction": "DOWN",
-      "confidence_pct": 68.5,
-      "recommended_action": "AVOID_LONG_OR_SHORT_INTRADAY",
-      "predicted_stop_loss": 1148.88,
-      "predicted_take_profit": 1030.16,
-      "selected_model": "GradientBoostedStumps(n=15, lr=0.07)",
-      "test_mae_pct": 1.6351,
-      "test_rmse_pct": 2.1009,
+      "predicted_stop_loss": 1315.38,
+      "predicted_take_profit": 1404.42,
+      "selected_model": "RidgeRegression(alpha=40.0)",
+      "test_mae_pct": 1.3996,
+      "test_rmse_pct": 2.1748,
       "test_dir_acc_pct": 53.06,
       "test_mae_ci95": {
-        "low_pct": 1.3182,
-        "high_pct": 2.045
+        "low_pct": 1.0201,
+        "high_pct": 1.9091
       },
       "today_features": {
-        "ret_1d": 0.5587,
-        "ret_3d": -2.8319,
-        "ret_5d": -3.8108,
-        "rsi_14": 46.1691,
-        "ema_spread_pct": 0.1467,
-        "price_vs_ema21_pct": -1.9789,
-        "atr_pct": 3.089,
-        "vol_ratio_10d": 1.51,
-        "high_low_range_pct": 3.3789,
-        "close_loc_in_range": 0.4394
+        "ret_1d": -1.9238,
+        "ret_3d": -0.8804,
+        "ret_5d": 0.461,
+        "rsi_14": 64.8892,
+        "ema_spread_pct": 2.9108,
+        "price_vs_ema21_pct": 3.1221,
+        "atr_pct": 2.1972,
+        "vol_ratio_10d": 1.0281,
+        "high_low_range_pct": 3.1902,
+        "close_loc_in_range": 0.0951
       },
       "data_audit": {
-        "raw_row_count": 248,
-        "usable_row_count": 243,
+        "raw_row_count": 247,
+        "usable_row_count": 242,
         "warmup_rows_removed": 5,
         "null_frequency_before_handling": {
           "ret_1d": 1,
@@ -441,7 +72,7 @@
         },
         "missing_value_policy": "Removed initial 5 warmup rows for 5-day momentum lag; forward-filled any isolated feature gaps and imputed 0.0 neutral return where needed. Final row has target_next_ret_pct=NaN because it represents today's live bar predicting tomorrow.",
         "stationarity_audit": {
-          "raw_close_lag1_autocorr": 0.992,
+          "raw_close_lag1_autocorr": 0.9784,
           "return_pct_lag1_autocorr": 0.0033,
           "stationary_target_confirmed": true,
           "conclusion": "Raw price series is non-stationary (near-unit root autocorr); modeling percentage return target_next_ret_pct stabilizes mean and variance."
@@ -449,94 +80,463 @@
       },
       "model_comparison": {
         "chronological_split": {
-          "train_rows": 145,
+          "train_rows": 144,
           "val_rows": 48,
           "test_rows": 49,
-          "train_period": "2025-11-27 to 2026-07-01",
-          "val_period": "2026-07-02 to 2026-09-07",
-          "test_period": "2026-09-08 to 2026-11-19"
+          "train_period": "2025-12-01 to 2026-07-02",
+          "val_period": "2026-07-03 to 2026-09-08",
+          "test_period": "2026-09-09 to 2026-11-20"
         },
         "validation_metrics": {
           "NaiveDriftBaseline": {
-            "mae_pct": 1.4004,
-            "rmse_pct": 1.8378,
-            "directional_accuracy_pct": 58.33
+            "mae_pct": 0.9596,
+            "rmse_pct": 1.2055,
+            "directional_accuracy_pct": 50.0
           },
           "RidgeRegression(alpha=40.0)": {
-            "mae_pct": 1.4,
-            "rmse_pct": 1.9071,
-            "directional_accuracy_pct": 58.33
+            "mae_pct": 0.93,
+            "rmse_pct": 1.1623,
+            "directional_accuracy_pct": 56.25
+          },
+          "GradientBoostedStumps(n=40)": {
+            "mae_pct": 0.9332,
+            "rmse_pct": 1.2106,
+            "directional_accuracy_pct": 50.0
+          }
+        },
+        "test_metrics": {
+          "NaiveDriftBaseline": {
+            "mae_pct": 1.2552,
+            "rmse_pct": 2.1192,
+            "directional_accuracy_pct": 42.86
+          },
+          "RidgeRegression(alpha=40.0)": {
+            "mae_pct": 1.3996,
+            "rmse_pct": 2.1748,
+            "directional_accuracy_pct": 53.06
+          },
+          "GradientBoostedStumps(n=40)": {
+            "mae_pct": 1.2914,
+            "rmse_pct": 2.1362,
+            "directional_accuracy_pct": 48.98
+          }
+        },
+        "selected_model": "RidgeRegression(alpha=40.0)",
+        "selected_test_mae_ci95": {
+          "low_pct": 1.0201,
+          "high_pct": 1.9091
+        }
+      },
+      "prediction_id": 19
+    },
+    {
+      "symbol": "TCS-EQ",
+      "token": "11536",
+      "exchange": "NSE",
+      "data_source": "yfinance_daily:TCS.NS + yfinance:TCS.NS",
+      "prediction_date": "2026-11-23",
+      "target_session_date": "2026-11-24",
+      "base_close": 2460.0,
+      "predicted_return_pct": -0.051,
+      "predicted_next_close": 2458.75,
+      "predicted_change_inr": -1.25,
+      "predicted_direction": "NEUTRAL",
+      "confidence_pct": 68.4,
+      "recommended_action": "WAIT_FOR_VWAP_BREAKOUT",
+      "predicted_stop_loss": 2376.0,
+      "predicted_take_profit": 2586.0,
+      "selected_model": "GradientBoostedStumps(n=15, lr=0.07)",
+      "test_mae_pct": 1.3991,
+      "test_rmse_pct": 1.9942,
+      "test_dir_acc_pct": 57.14,
+      "test_mae_ci95": {
+        "low_pct": 1.0465,
+        "high_pct": 1.847
+      },
+      "today_features": {
+        "ret_1d": 3.5266,
+        "ret_3d": 3.3831,
+        "ret_5d": 2.2869,
+        "rsi_14": 57.3181,
+        "ema_spread_pct": 0.1051,
+        "price_vs_ema21_pct": 1.9845,
+        "atr_pct": 2.8457,
+        "vol_ratio_10d": 2.3506,
+        "high_low_range_pct": 4.1016,
+        "close_loc_in_range": 0.5847
+      },
+      "data_audit": {
+        "raw_row_count": 247,
+        "usable_row_count": 242,
+        "warmup_rows_removed": 5,
+        "null_frequency_before_handling": {
+          "ret_1d": 1,
+          "ret_3d": 3,
+          "ret_5d": 5,
+          "rsi_14": 0,
+          "ema_spread_pct": 0,
+          "price_vs_ema21_pct": 0,
+          "atr_pct": 0,
+          "vol_ratio_10d": 0,
+          "high_low_range_pct": 0,
+          "close_loc_in_range": 0
+        },
+        "null_frequency_after_handling": {
+          "ret_1d": 0,
+          "ret_3d": 0,
+          "ret_5d": 0,
+          "rsi_14": 0,
+          "ema_spread_pct": 0,
+          "price_vs_ema21_pct": 0,
+          "atr_pct": 0,
+          "vol_ratio_10d": 0,
+          "high_low_range_pct": 0,
+          "close_loc_in_range": 0
+        },
+        "missing_value_policy": "Removed initial 5 warmup rows for 5-day momentum lag; forward-filled any isolated feature gaps and imputed 0.0 neutral return where needed. Final row has target_next_ret_pct=NaN because it represents today's live bar predicting tomorrow.",
+        "stationarity_audit": {
+          "raw_close_lag1_autocorr": 0.9905,
+          "return_pct_lag1_autocorr": -0.0492,
+          "stationary_target_confirmed": true,
+          "conclusion": "Raw price series is non-stationary (near-unit root autocorr); modeling percentage return target_next_ret_pct stabilizes mean and variance."
+        }
+      },
+      "model_comparison": {
+        "chronological_split": {
+          "train_rows": 144,
+          "val_rows": 48,
+          "test_rows": 49,
+          "train_period": "2025-12-01 to 2026-07-02",
+          "val_period": "2026-07-03 to 2026-09-08",
+          "test_period": "2026-09-09 to 2026-11-20"
+        },
+        "validation_metrics": {
+          "NaiveDriftBaseline": {
+            "mae_pct": 1.551,
+            "rmse_pct": 2.039,
+            "directional_accuracy_pct": 54.17
+          },
+          "RidgeRegression(alpha=40.0)": {
+            "mae_pct": 1.6864,
+            "rmse_pct": 2.2752,
+            "directional_accuracy_pct": 52.08
           },
           "GradientBoostedStumps(n=15)": {
-            "mae_pct": 1.4123,
-            "rmse_pct": 1.8637,
+            "mae_pct": 1.5271,
+            "rmse_pct": 2.1063,
+            "directional_accuracy_pct": 54.17
+          }
+        },
+        "test_metrics": {
+          "NaiveDriftBaseline": {
+            "mae_pct": 1.3974,
+            "rmse_pct": 2.0009,
+            "directional_accuracy_pct": 57.14
+          },
+          "RidgeRegression(alpha=40.0)": {
+            "mae_pct": 1.4021,
+            "rmse_pct": 2.024,
+            "directional_accuracy_pct": 57.14
+          },
+          "GradientBoostedStumps(n=15)": {
+            "mae_pct": 1.3991,
+            "rmse_pct": 1.9942,
+            "directional_accuracy_pct": 57.14
+          }
+        },
+        "selected_model": "GradientBoostedStumps(n=15, lr=0.07)",
+        "selected_test_mae_ci95": {
+          "low_pct": 1.0465,
+          "high_pct": 1.847
+        }
+      },
+      "prediction_id": 20
+    },
+    {
+      "symbol": "HDFCBANK-EQ",
+      "token": "1333",
+      "exchange": "NSE",
+      "data_source": "yfinance_daily:HDFCBANK.NS + yfinance:HDFCBANK.NS",
+      "prediction_date": "2026-11-23",
+      "target_session_date": "2026-11-24",
+      "base_close": 817.8,
+      "predicted_return_pct": 0.161,
+      "predicted_next_close": 819.12,
+      "predicted_change_inr": 1.32,
+      "predicted_direction": "UP",
+      "confidence_pct": 66.4,
+      "recommended_action": "BUY_ON_OPEN_OR_HOLD",
+      "predicted_stop_loss": 788.2,
+      "predicted_take_profit": 857.26,
+      "selected_model": "GradientBoostedStumps(n=60, lr=0.07)",
+      "test_mae_pct": 1.4946,
+      "test_rmse_pct": 1.8155,
+      "test_dir_acc_pct": 48.98,
+      "test_mae_ci95": {
+        "low_pct": 1.2206,
+        "high_pct": 1.8106
+      },
+      "today_features": {
+        "ret_1d": -3.3333,
+        "ret_3d": 1.1941,
+        "ret_5d": 0.1592,
+        "rsi_14": 65.1929,
+        "ema_spread_pct": 3.8415,
+        "price_vs_ema21_pct": 4.9722,
+        "atr_pct": 2.4124,
+        "vol_ratio_10d": 1.3356,
+        "high_low_range_pct": 5.5821,
+        "close_loc_in_range": 0.0821
+      },
+      "data_audit": {
+        "raw_row_count": 247,
+        "usable_row_count": 242,
+        "warmup_rows_removed": 5,
+        "null_frequency_before_handling": {
+          "ret_1d": 1,
+          "ret_3d": 3,
+          "ret_5d": 5,
+          "rsi_14": 0,
+          "ema_spread_pct": 0,
+          "price_vs_ema21_pct": 0,
+          "atr_pct": 0,
+          "vol_ratio_10d": 0,
+          "high_low_range_pct": 0,
+          "close_loc_in_range": 0
+        },
+        "null_frequency_after_handling": {
+          "ret_1d": 0,
+          "ret_3d": 0,
+          "ret_5d": 0,
+          "rsi_14": 0,
+          "ema_spread_pct": 0,
+          "price_vs_ema21_pct": 0,
+          "atr_pct": 0,
+          "vol_ratio_10d": 0,
+          "high_low_range_pct": 0,
+          "close_loc_in_range": 0
+        },
+        "missing_value_policy": "Removed initial 5 warmup rows for 5-day momentum lag; forward-filled any isolated feature gaps and imputed 0.0 neutral return where needed. Final row has target_next_ret_pct=NaN because it represents today's live bar predicting tomorrow.",
+        "stationarity_audit": {
+          "raw_close_lag1_autocorr": 0.9912,
+          "return_pct_lag1_autocorr": 0.0185,
+          "stationary_target_confirmed": true,
+          "conclusion": "Raw price series is non-stationary (near-unit root autocorr); modeling percentage return target_next_ret_pct stabilizes mean and variance."
+        }
+      },
+      "model_comparison": {
+        "chronological_split": {
+          "train_rows": 144,
+          "val_rows": 48,
+          "test_rows": 49,
+          "train_period": "2025-12-01 to 2026-07-02",
+          "val_period": "2026-07-03 to 2026-09-08",
+          "test_period": "2026-09-09 to 2026-11-20"
+        },
+        "validation_metrics": {
+          "NaiveDriftBaseline": {
+            "mae_pct": 0.95,
+            "rmse_pct": 1.3249,
+            "directional_accuracy_pct": 60.42
+          },
+          "RidgeRegression(alpha=40.0)": {
+            "mae_pct": 1.0254,
+            "rmse_pct": 1.3789,
+            "directional_accuracy_pct": 52.08
+          },
+          "GradientBoostedStumps(n=60)": {
+            "mae_pct": 0.9117,
+            "rmse_pct": 1.2736,
+            "directional_accuracy_pct": 66.67
+          }
+        },
+        "test_metrics": {
+          "NaiveDriftBaseline": {
+            "mae_pct": 1.4082,
+            "rmse_pct": 1.7032,
+            "directional_accuracy_pct": 44.9
+          },
+          "RidgeRegression(alpha=40.0)": {
+            "mae_pct": 1.485,
+            "rmse_pct": 1.8035,
+            "directional_accuracy_pct": 46.94
+          },
+          "GradientBoostedStumps(n=60)": {
+            "mae_pct": 1.4946,
+            "rmse_pct": 1.8155,
+            "directional_accuracy_pct": 48.98
+          }
+        },
+        "selected_model": "GradientBoostedStumps(n=60, lr=0.07)",
+        "selected_test_mae_ci95": {
+          "low_pct": 1.2206,
+          "high_pct": 1.8106
+        }
+      },
+      "prediction_id": 21
+    },
+    {
+      "symbol": "INFY-EQ",
+      "token": "1594",
+      "exchange": "NSE",
+      "data_source": "yfinance_daily:INFY.NS + yfinance:INFY.NS",
+      "prediction_date": "2026-11-23",
+      "target_session_date": "2026-11-24",
+      "base_close": 1103.4,
+      "predicted_return_pct": -0.107,
+      "predicted_next_close": 1102.22,
+      "predicted_change_inr": -1.18,
+      "predicted_direction": "NEUTRAL",
+      "confidence_pct": 67.4,
+      "recommended_action": "WAIT_FOR_VWAP_BREAKOUT",
+      "predicted_stop_loss": 1062.66,
+      "predicted_take_profit": 1164.51,
+      "selected_model": "GradientBoostedStumps(n=25, lr=0.07)",
+      "test_mae_pct": 1.573,
+      "test_rmse_pct": 2.0294,
+      "test_dir_acc_pct": 53.06,
+      "test_mae_ci95": {
+        "low_pct": 1.2565,
+        "high_pct": 1.937
+      },
+      "today_features": {
+        "ret_1d": 0.4918,
+        "ret_3d": -0.487,
+        "ret_5d": -3.6416,
+        "rsi_14": 47.4854,
+        "ema_spread_pct": -0.049,
+        "price_vs_ema21_pct": -1.3626,
+        "atr_pct": 3.077,
+        "vol_ratio_10d": 1.4006,
+        "high_low_range_pct": 2.9364,
+        "close_loc_in_range": 0.1049
+      },
+      "data_audit": {
+        "raw_row_count": 247,
+        "usable_row_count": 242,
+        "warmup_rows_removed": 5,
+        "null_frequency_before_handling": {
+          "ret_1d": 1,
+          "ret_3d": 3,
+          "ret_5d": 5,
+          "rsi_14": 0,
+          "ema_spread_pct": 0,
+          "price_vs_ema21_pct": 0,
+          "atr_pct": 0,
+          "vol_ratio_10d": 0,
+          "high_low_range_pct": 0,
+          "close_loc_in_range": 0
+        },
+        "null_frequency_after_handling": {
+          "ret_1d": 0,
+          "ret_3d": 0,
+          "ret_5d": 0,
+          "rsi_14": 0,
+          "ema_spread_pct": 0,
+          "price_vs_ema21_pct": 0,
+          "atr_pct": 0,
+          "vol_ratio_10d": 0,
+          "high_low_range_pct": 0,
+          "close_loc_in_range": 0
+        },
+        "missing_value_policy": "Removed initial 5 warmup rows for 5-day momentum lag; forward-filled any isolated feature gaps and imputed 0.0 neutral return where needed. Final row has target_next_ret_pct=NaN because it represents today's live bar predicting tomorrow.",
+        "stationarity_audit": {
+          "raw_close_lag1_autocorr": 0.9919,
+          "return_pct_lag1_autocorr": 0.004,
+          "stationary_target_confirmed": true,
+          "conclusion": "Raw price series is non-stationary (near-unit root autocorr); modeling percentage return target_next_ret_pct stabilizes mean and variance."
+        }
+      },
+      "model_comparison": {
+        "chronological_split": {
+          "train_rows": 144,
+          "val_rows": 48,
+          "test_rows": 49,
+          "train_period": "2025-12-01 to 2026-07-02",
+          "val_period": "2026-07-03 to 2026-09-08",
+          "test_period": "2026-09-09 to 2026-11-20"
+        },
+        "validation_metrics": {
+          "NaiveDriftBaseline": {
+            "mae_pct": 1.4682,
+            "rmse_pct": 1.9263,
+            "directional_accuracy_pct": 60.42
+          },
+          "RidgeRegression(alpha=40.0)": {
+            "mae_pct": 1.4752,
+            "rmse_pct": 2.0066,
+            "directional_accuracy_pct": 58.33
+          },
+          "GradientBoostedStumps(n=25)": {
+            "mae_pct": 1.4495,
+            "rmse_pct": 1.9775,
             "directional_accuracy_pct": 58.33
           }
         },
         "test_metrics": {
           "NaiveDriftBaseline": {
-            "mae_pct": 1.6326,
-            "rmse_pct": 2.1021,
-            "directional_accuracy_pct": 53.06
-          },
-          "RidgeRegression(alpha=40.0)": {
-            "mae_pct": 1.7187,
-            "rmse_pct": 2.1958,
+            "mae_pct": 1.5639,
+            "rmse_pct": 2.0209,
             "directional_accuracy_pct": 51.02
           },
-          "GradientBoostedStumps(n=15)": {
-            "mae_pct": 1.6351,
-            "rmse_pct": 2.1009,
+          "RidgeRegression(alpha=40.0)": {
+            "mae_pct": 1.6432,
+            "rmse_pct": 2.1024,
+            "directional_accuracy_pct": 53.06
+          },
+          "GradientBoostedStumps(n=25)": {
+            "mae_pct": 1.573,
+            "rmse_pct": 2.0294,
             "directional_accuracy_pct": 53.06
           }
         },
-        "selected_model": "GradientBoostedStumps(n=15, lr=0.07)",
+        "selected_model": "GradientBoostedStumps(n=25, lr=0.07)",
         "selected_test_mae_ci95": {
-          "low_pct": 1.3182,
-          "high_pct": 2.045
+          "low_pct": 1.2565,
+          "high_pct": 1.937
         }
       },
-      "prediction_id": 16
+      "prediction_id": 22
     },
     {
       "symbol": "ICICIBANK-EQ",
       "token": "4963",
       "exchange": "NSE",
       "data_source": "yfinance_daily:ICICIBANK.NS + yfinance:ICICIBANK.NS",
-      "prediction_date": "2026-11-20",
-      "target_session_date": "2026-11-23",
-      "base_close": 1640.0,
-      "predicted_return_pct": 0.317,
-      "predicted_next_close": 1645.2,
-      "predicted_change_inr": 5.2,
+      "prediction_date": "2026-11-23",
+      "target_session_date": "2026-11-24",
+      "base_close": 1585.5,
+      "predicted_return_pct": 0.196,
+      "predicted_next_close": 1588.61,
+      "predicted_change_inr": 3.11,
       "predicted_direction": "UP",
-      "confidence_pct": 75.8,
+      "confidence_pct": 70.1,
       "recommended_action": "BUY_ON_OPEN_OR_HOLD",
-      "predicted_stop_loss": 1593.41,
-      "predicted_take_profit": 1702.12,
+      "predicted_stop_loss": 1535.88,
+      "predicted_take_profit": 1651.66,
       "selected_model": "GradientBoostedStumps(n=15, lr=0.07)",
-      "test_mae_pct": 1.0807,
-      "test_rmse_pct": 1.5281,
-      "test_dir_acc_pct": 69.39,
+      "test_mae_pct": 1.1422,
+      "test_rmse_pct": 1.6106,
+      "test_dir_acc_pct": 57.14,
       "test_mae_ci95": {
-        "low_pct": 0.85,
-        "high_pct": 1.4172
+        "low_pct": 0.8451,
+        "high_pct": 1.5457
       },
       "today_features": {
-        "ret_1d": 1.933,
-        "ret_3d": 2.5834,
-        "ret_5d": 3.5615,
-        "rsi_14": 80.9991,
-        "ema_spread_pct": 3.9413,
-        "price_vs_ema21_pct": 7.8696,
-        "atr_pct": 1.8938,
-        "vol_ratio_10d": 0.945,
-        "high_low_range_pct": 2.689,
-        "close_loc_in_range": 0.8866
+        "ret_1d": -3.3232,
+        "ret_3d": -0.9867,
+        "ret_5d": 0.0315,
+        "rsi_14": 65.3481,
+        "ema_spread_pct": 3.7096,
+        "price_vs_ema21_pct": 3.8802,
+        "atr_pct": 2.0861,
+        "vol_ratio_10d": 1.2928,
+        "high_low_range_pct": 3.7401,
+        "close_loc_in_range": 0.0
       },
       "data_audit": {
-        "raw_row_count": 248,
-        "usable_row_count": 243,
+        "raw_row_count": 247,
+        "usable_row_count": 242,
         "warmup_rows_removed": 5,
         "null_frequency_before_handling": {
           "ret_1d": 1,
@@ -564,102 +564,102 @@
         },
         "missing_value_policy": "Removed initial 5 warmup rows for 5-day momentum lag; forward-filled any isolated feature gaps and imputed 0.0 neutral return where needed. Final row has target_next_ret_pct=NaN because it represents today's live bar predicting tomorrow.",
         "stationarity_audit": {
-          "raw_close_lag1_autocorr": 0.9742,
-          "return_pct_lag1_autocorr": 0.063,
+          "raw_close_lag1_autocorr": 0.9741,
+          "return_pct_lag1_autocorr": 0.0485,
           "stationary_target_confirmed": true,
           "conclusion": "Raw price series is non-stationary (near-unit root autocorr); modeling percentage return target_next_ret_pct stabilizes mean and variance."
         }
       },
       "model_comparison": {
         "chronological_split": {
-          "train_rows": 145,
+          "train_rows": 144,
           "val_rows": 48,
           "test_rows": 49,
-          "train_period": "2025-11-27 to 2026-07-01",
-          "val_period": "2026-07-02 to 2026-09-07",
-          "test_period": "2026-09-08 to 2026-11-19"
+          "train_period": "2025-12-01 to 2026-07-02",
+          "val_period": "2026-07-03 to 2026-09-08",
+          "test_period": "2026-09-09 to 2026-11-20"
         },
         "validation_metrics": {
           "NaiveDriftBaseline": {
-            "mae_pct": 0.8134,
-            "rmse_pct": 1.0611,
-            "directional_accuracy_pct": 54.17
+            "mae_pct": 0.8123,
+            "rmse_pct": 1.0605,
+            "directional_accuracy_pct": 52.08
           },
           "RidgeRegression(alpha=40.0)": {
-            "mae_pct": 0.8499,
-            "rmse_pct": 1.0935,
-            "directional_accuracy_pct": 45.83
+            "mae_pct": 0.8453,
+            "rmse_pct": 1.0926,
+            "directional_accuracy_pct": 41.67
           },
           "GradientBoostedStumps(n=15)": {
-            "mae_pct": 0.8268,
-            "rmse_pct": 1.0652,
+            "mae_pct": 0.8271,
+            "rmse_pct": 1.0679,
             "directional_accuracy_pct": 45.83
           }
         },
         "test_metrics": {
           "NaiveDriftBaseline": {
-            "mae_pct": 1.0993,
-            "rmse_pct": 1.539,
+            "mae_pct": 1.1517,
+            "rmse_pct": 1.6064,
             "directional_accuracy_pct": 53.06
           },
           "RidgeRegression(alpha=40.0)": {
-            "mae_pct": 1.1429,
-            "rmse_pct": 1.5846,
-            "directional_accuracy_pct": 44.9
+            "mae_pct": 1.2029,
+            "rmse_pct": 1.658,
+            "directional_accuracy_pct": 42.86
           },
           "GradientBoostedStumps(n=15)": {
-            "mae_pct": 1.0807,
-            "rmse_pct": 1.5281,
-            "directional_accuracy_pct": 69.39
+            "mae_pct": 1.1422,
+            "rmse_pct": 1.6106,
+            "directional_accuracy_pct": 57.14
           }
         },
         "selected_model": "GradientBoostedStumps(n=15, lr=0.07)",
         "selected_test_mae_ci95": {
-          "low_pct": 0.85,
-          "high_pct": 1.4172
+          "low_pct": 0.8451,
+          "high_pct": 1.5457
         }
       },
-      "prediction_id": 17
+      "prediction_id": 23
     },
     {
       "symbol": "SBIN-EQ",
       "token": "3045",
       "exchange": "NSE",
       "data_source": "yfinance_daily:SBIN.NS + yfinance:SBIN.NS",
-      "prediction_date": "2026-11-20",
-      "target_session_date": "2026-11-23",
-      "base_close": 1165.1,
+      "prediction_date": "2026-11-23",
+      "target_session_date": "2026-11-24",
+      "base_close": 1132.65,
       "predicted_return_pct": 0.174,
-      "predicted_next_close": 1167.13,
-      "predicted_change_inr": 2.03,
+      "predicted_next_close": 1134.62,
+      "predicted_change_inr": 1.97,
       "predicted_direction": "UP",
-      "confidence_pct": 66.1,
+      "confidence_pct": 61.1,
       "recommended_action": "BUY_ON_OPEN_OR_HOLD",
-      "predicted_stop_loss": 1128.33,
-      "predicted_take_profit": 1214.12,
+      "predicted_stop_loss": 1092.77,
+      "predicted_take_profit": 1185.83,
       "selected_model": "GradientBoostedStumps(n=15, lr=0.07)",
-      "test_mae_pct": 1.2418,
-      "test_rmse_pct": 1.4606,
-      "test_dir_acc_pct": 46.94,
+      "test_mae_pct": 1.2845,
+      "test_rmse_pct": 1.5085,
+      "test_dir_acc_pct": 32.65,
       "test_mae_ci95": {
-        "low_pct": 1.0028,
-        "high_pct": 1.4254
+        "low_pct": 1.0526,
+        "high_pct": 1.523
       },
       "today_features": {
-        "ret_1d": 0.7872,
-        "ret_3d": 5.0965,
-        "ret_5d": 7.8796,
-        "rsi_14": 82.1428,
-        "ema_spread_pct": 4.3865,
-        "price_vs_ema21_pct": 10.4933,
-        "atr_pct": 2.1036,
-        "vol_ratio_10d": 0.7979,
-        "high_low_range_pct": 2.6521,
-        "close_loc_in_range": 0.6828
+        "ret_1d": -2.7852,
+        "ret_3d": -0.207,
+        "ret_5d": 3.8652,
+        "rsi_14": 70.2799,
+        "ema_spread_pct": 4.3629,
+        "price_vs_ema21_pct": 6.6965,
+        "atr_pct": 2.348,
+        "vol_ratio_10d": 0.6823,
+        "high_low_range_pct": 4.7411,
+        "close_loc_in_range": 0.0885
       },
       "data_audit": {
-        "raw_row_count": 248,
-        "usable_row_count": 243,
+        "raw_row_count": 247,
+        "usable_row_count": 242,
         "warmup_rows_removed": 5,
         "null_frequency_before_handling": {
           "ret_1d": 1,
@@ -687,62 +687,62 @@
         },
         "missing_value_policy": "Removed initial 5 warmup rows for 5-day momentum lag; forward-filled any isolated feature gaps and imputed 0.0 neutral return where needed. Final row has target_next_ret_pct=NaN because it represents today's live bar predicting tomorrow.",
         "stationarity_audit": {
-          "raw_close_lag1_autocorr": 0.9665,
-          "return_pct_lag1_autocorr": -0.0567,
+          "raw_close_lag1_autocorr": 0.9662,
+          "return_pct_lag1_autocorr": -0.058,
           "stationary_target_confirmed": true,
           "conclusion": "Raw price series is non-stationary (near-unit root autocorr); modeling percentage return target_next_ret_pct stabilizes mean and variance."
         }
       },
       "model_comparison": {
         "chronological_split": {
-          "train_rows": 145,
+          "train_rows": 144,
           "val_rows": 48,
           "test_rows": 49,
-          "train_period": "2025-11-27 to 2026-07-01",
-          "val_period": "2026-07-02 to 2026-09-07",
-          "test_period": "2026-09-08 to 2026-11-19"
+          "train_period": "2025-12-01 to 2026-07-02",
+          "val_period": "2026-07-03 to 2026-09-08",
+          "test_period": "2026-09-09 to 2026-11-20"
         },
         "validation_metrics": {
           "NaiveDriftBaseline": {
-            "mae_pct": 0.9254,
-            "rmse_pct": 1.1751,
+            "mae_pct": 0.9176,
+            "rmse_pct": 1.1677,
             "directional_accuracy_pct": 54.17
           },
           "RidgeRegression(alpha=40.0)": {
-            "mae_pct": 0.9129,
-            "rmse_pct": 1.1485,
-            "directional_accuracy_pct": 50.0
+            "mae_pct": 0.9104,
+            "rmse_pct": 1.1449,
+            "directional_accuracy_pct": 52.08
           },
           "GradientBoostedStumps(n=15)": {
-            "mae_pct": 0.9228,
-            "rmse_pct": 1.1773,
-            "directional_accuracy_pct": 60.42
+            "mae_pct": 0.9106,
+            "rmse_pct": 1.166,
+            "directional_accuracy_pct": 56.25
           }
         },
         "test_metrics": {
           "NaiveDriftBaseline": {
-            "mae_pct": 1.1982,
-            "rmse_pct": 1.418,
+            "mae_pct": 1.2411,
+            "rmse_pct": 1.4721,
             "directional_accuracy_pct": 59.18
           },
           "RidgeRegression(alpha=40.0)": {
-            "mae_pct": 1.3072,
-            "rmse_pct": 1.5432,
-            "directional_accuracy_pct": 38.78
+            "mae_pct": 1.35,
+            "rmse_pct": 1.5956,
+            "directional_accuracy_pct": 36.73
           },
           "GradientBoostedStumps(n=15)": {
-            "mae_pct": 1.2418,
-            "rmse_pct": 1.4606,
-            "directional_accuracy_pct": 46.94
+            "mae_pct": 1.2845,
+            "rmse_pct": 1.5085,
+            "directional_accuracy_pct": 32.65
           }
         },
         "selected_model": "GradientBoostedStumps(n=15, lr=0.07)",
         "selected_test_mae_ci95": {
-          "low_pct": 1.0028,
-          "high_pct": 1.4254
+          "low_pct": 1.0526,
+          "high_pct": 1.523
         }
       },
-      "prediction_id": 18
+      "prediction_id": 24
     }
   ]
 }

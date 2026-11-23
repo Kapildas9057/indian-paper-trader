@@ -1,10 +1,10 @@
 {
-  "rsi_buy_threshold": 26,
+  "rsi_buy_threshold": 25,
   "rsi_sell_threshold": 60,
   "ema_fast": 9,
   "ema_slow": 21,
   "stop_loss_pct": 1.2,
   "take_profit_pct": 2.5,
   "risk_per_trade_pct": 11.0,
-  "updated_at": "2026-11-20T17:59:13+05:30"
+  "updated_at": "2026-11-23T17:20:12+05:30"
 }
