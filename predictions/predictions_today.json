@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T17:20:12+05:30",
-  "prediction_date": "2026-11-23",
-  "target_session_date": "2026-11-24",
+  "generated_at": "2026-11-24T18:48:07+05:30",
+  "prediction_date": "2026-11-24",
+  "target_session_date": "2026-11-25",
   "total_symbols_predicted": 6,
   "avg_test_directional_accuracy_pct": 50.34,
   "avg_test_mae_pct": 1.3822,
@@ -11,12 +11,12 @@
       "token": "2885",
       "exchange": "NSE",
       "data_source": "yfinance_daily:RELIANCE.NS + yfinance:RELIANCE.NS",
-      "prediction_date": "2026-11-23",
-      "target_session_date": "2026-11-24",
+      "prediction_date": "2026-11-24",
+      "target_session_date": "2026-11-25",
       "base_close": 1351.0,
-      "predicted_return_pct": -0.071,
-      "predicted_next_close": 1350.04,
-      "predicted_change_inr": -0.96,
+      "predicted_return_pct": -0.07,
+      "predicted_next_close": 1350.05,
+      "predicted_change_inr": -0.95,
       "predicted_direction": "NEUTRAL",
       "confidence_pct": 67.2,
       "recommended_action": "WAIT_FOR_VWAP_BREAKOUT",
@@ -38,7 +38,7 @@
         "ema_spread_pct": 2.9108,
         "price_vs_ema21_pct": 3.1221,
         "atr_pct": 2.1972,
-        "vol_ratio_10d": 1.0281,
+        "vol_ratio_10d": 1.0283,
         "high_low_range_pct": 3.1902,
         "close_loc_in_range": 0.0951
       },
@@ -127,15 +127,15 @@
           "high_pct": 1.9091
         }
       },
-      "prediction_id": 19
+      "prediction_id": 25
     },
     {
       "symbol": "TCS-EQ",
       "token": "11536",
       "exchange": "NSE",
       "data_source": "yfinance_daily:TCS.NS + yfinance:TCS.NS",
-      "prediction_date": "2026-11-23",
-      "target_session_date": "2026-11-24",
+      "prediction_date": "2026-11-24",
+      "target_session_date": "2026-11-25",
       "base_close": 2460.0,
       "predicted_return_pct": -0.051,
       "predicted_next_close": 2458.75,
@@ -161,7 +161,7 @@
         "ema_spread_pct": 0.1051,
         "price_vs_ema21_pct": 1.9845,
         "atr_pct": 2.8457,
-        "vol_ratio_10d": 2.3506,
+        "vol_ratio_10d": 2.3511,
         "high_low_range_pct": 4.1016,
         "close_loc_in_range": 0.5847
       },
@@ -250,15 +250,15 @@
           "high_pct": 1.847
         }
       },
-      "prediction_id": 20
+      "prediction_id": 26
     },
     {
       "symbol": "HDFCBANK-EQ",
       "token": "1333",
       "exchange": "NSE",
       "data_source": "yfinance_daily:HDFCBANK.NS + yfinance:HDFCBANK.NS",
-      "prediction_date": "2026-11-23",
-      "target_session_date": "2026-11-24",
+      "prediction_date": "2026-11-24",
+      "target_session_date": "2026-11-25",
       "base_close": 817.8,
       "predicted_return_pct": 0.161,
       "predicted_next_close": 819.12,
@@ -284,7 +284,7 @@
         "ema_spread_pct": 3.8415,
         "price_vs_ema21_pct": 4.9722,
         "atr_pct": 2.4124,
-        "vol_ratio_10d": 1.3356,
+        "vol_ratio_10d": 1.3358,
         "high_low_range_pct": 5.5821,
         "close_loc_in_range": 0.0821
       },
@@ -373,15 +373,15 @@
           "high_pct": 1.8106
         }
       },
-      "prediction_id": 21
+      "prediction_id": 27
     },
     {
       "symbol": "INFY-EQ",
       "token": "1594",
       "exchange": "NSE",
       "data_source": "yfinance_daily:INFY.NS + yfinance:INFY.NS",
-      "prediction_date": "2026-11-23",
-      "target_session_date": "2026-11-24",
+      "prediction_date": "2026-11-24",
+      "target_session_date": "2026-11-25",
       "base_close": 1103.4,
       "predicted_return_pct": -0.107,
       "predicted_next_close": 1102.22,
@@ -407,7 +407,7 @@
         "ema_spread_pct": -0.049,
         "price_vs_ema21_pct": -1.3626,
         "atr_pct": 3.077,
-        "vol_ratio_10d": 1.4006,
+        "vol_ratio_10d": 1.4009,
         "high_low_range_pct": 2.9364,
         "close_loc_in_range": 0.1049
       },
@@ -496,15 +496,15 @@
           "high_pct": 1.937
         }
       },
-      "prediction_id": 22
+      "prediction_id": 28
     },
     {
       "symbol": "ICICIBANK-EQ",
       "token": "4963",
       "exchange": "NSE",
       "data_source": "yfinance_daily:ICICIBANK.NS + yfinance:ICICIBANK.NS",
-      "prediction_date": "2026-11-23",
-      "target_session_date": "2026-11-24",
+      "prediction_date": "2026-11-24",
+      "target_session_date": "2026-11-25",
       "base_close": 1585.5,
       "predicted_return_pct": 0.196,
       "predicted_next_close": 1588.61,
@@ -530,7 +530,7 @@
         "ema_spread_pct": 3.7096,
         "price_vs_ema21_pct": 3.8802,
         "atr_pct": 2.0861,
-        "vol_ratio_10d": 1.2928,
+        "vol_ratio_10d": 1.2929,
         "high_low_range_pct": 3.7401,
         "close_loc_in_range": 0.0
       },
@@ -619,15 +619,15 @@
           "high_pct": 1.5457
         }
       },
-      "prediction_id": 23
+      "prediction_id": 29
     },
     {
       "symbol": "SBIN-EQ",
       "token": "3045",
       "exchange": "NSE",
       "data_source": "yfinance_daily:SBIN.NS + yfinance:SBIN.NS",
-      "prediction_date": "2026-11-23",
-      "target_session_date": "2026-11-24",
+      "prediction_date": "2026-11-24",
+      "target_session_date": "2026-11-25",
       "base_close": 1132.65,
       "predicted_return_pct": 0.174,
       "predicted_next_close": 1134.62,
@@ -653,7 +653,7 @@
         "ema_spread_pct": 4.3629,
         "price_vs_ema21_pct": 6.6965,
         "atr_pct": 2.348,
-        "vol_ratio_10d": 0.6823,
+        "vol_ratio_10d": 0.6824,
         "high_low_range_pct": 4.7411,
         "close_loc_in_range": 0.0885
       },
@@ -742,7 +742,7 @@
           "high_pct": 1.523
         }
       },
-      "prediction_id": 24
+      "prediction_id": 30
     }
   ]
 }

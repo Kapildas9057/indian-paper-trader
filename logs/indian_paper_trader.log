@@ -50,3 +50,13 @@
 2026-11-23 11:50:16,208 [INFO] Saved prediction #24 for SBIN-EQ: base=₹1132.65 -> pred=₹1134.62 (+0.174%, UP, conf=61.1%, model=GradientBoostedStumps(n=15, lr=0.07))
 2026-11-23 11:50:16,217 [INFO] Evaluated 12 saved predictions against market prices.
 2026-11-23 11:50:16,268 [INFO] Completed 4-Phase COOK cycle + ML Prediction save; wrote logs/latest_report.md & public/live_data.json
+2026-11-24 13:18:04,962 [INFO] Starting 4-Phase COOK cycle | {"market_open": false}
+2026-11-24 13:18:07,806 [INFO] Starting chronological ML training & next-session prediction across 6 scrips.
+2026-11-24 13:18:08,242 [INFO] Saved prediction #25 for RELIANCE-EQ: base=₹1351.00 -> pred=₹1350.05 (-0.070%, NEUTRAL, conf=67.2%, model=RidgeRegression(alpha=40.0))
+2026-11-24 13:18:08,669 [INFO] Saved prediction #26 for TCS-EQ: base=₹2460.00 -> pred=₹2458.75 (-0.051%, NEUTRAL, conf=68.4%, model=GradientBoostedStumps(n=15, lr=0.07))
+2026-11-24 13:18:09,256 [INFO] Saved prediction #27 for HDFCBANK-EQ: base=₹817.80 -> pred=₹819.12 (+0.161%, UP, conf=66.4%, model=GradientBoostedStumps(n=60, lr=0.07))
+2026-11-24 13:18:09,684 [INFO] Saved prediction #28 for INFY-EQ: base=₹1103.40 -> pred=₹1102.22 (-0.107%, NEUTRAL, conf=67.4%, model=GradientBoostedStumps(n=25, lr=0.07))
+2026-11-24 13:18:10,092 [INFO] Saved prediction #29 for ICICIBANK-EQ: base=₹1585.50 -> pred=₹1588.61 (+0.196%, UP, conf=70.1%, model=GradientBoostedStumps(n=15, lr=0.07))
+2026-11-24 13:18:10,486 [INFO] Saved prediction #30 for SBIN-EQ: base=₹1132.65 -> pred=₹1134.62 (+0.174%, UP, conf=61.1%, model=GradientBoostedStumps(n=15, lr=0.07))
+2026-11-24 13:18:10,495 [INFO] Evaluated 18 saved predictions against market prices.
+2026-11-24 13:18:10,539 [INFO] Completed 4-Phase COOK cycle + ML Prediction save; wrote logs/latest_report.md & public/live_data.json

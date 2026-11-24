@@ -1,5 +1,5 @@
 # IndianPaperTrader — Autonomous Cycle & ML Prediction Dashboard
-- **Run Timestamp (IST):** `2026-11-23T17:20:11+05:30`
+- **Run Timestamp (IST):** `2026-11-24T18:48:04+05:30`
 - **NSE Live Market Hours:** `CLOSED (Off-Hours Fallback & 15-Day Replay Active)`
 
 ## 1. Portfolio Ledger
@@ -27,26 +27,26 @@
 ### 15-Day Intraday Replay Benchmark
 | Symbol | Days | Bars | Trades | Win Rate % | Gross P&L (₹) | Brokerage (₹) | Net P&L (₹) | Max Drawdown % |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| RELIANCE-EQ | 15 | 1108 | 9 | 66.67% | 1051.76 | 360.00 | 691.76 | 0.12% |
+| RELIANCE-EQ | 15 | 1108 | 9 | 66.67% | 1042.96 | 360.00 | 682.96 | 0.12% |
 | TCS-EQ | 15 | 1107 | 8 | 12.50% | -542.84 | 320.00 | -862.84 | 0.89% |
 | HDFCBANK-EQ | 15 | 1109 | 8 | 62.50% | 512.42 | 320.00 | 192.42 | 0.19% |
-| INFY-EQ | 15 | 1107 | 10 | 10.00% | -407.58 | 400.00 | -807.58 | 0.96% |
+| INFY-EQ | 15 | 1107 | 10 | 20.00% | -399.30 | 400.00 | -799.30 | 0.95% |
 
 ## 4. Self-Improvement Reflection & `strategy_config.json` Diff
 - **Trailing Trades Reviewed:** `3`
-- **Updated At:** `2026-11-23T17:20:12+05:30`
+- **Updated At:** `2026-11-24T18:48:07+05:30`
 | Parameter | Previous | Updated |
 |---|---:|---:|
-| `rsi_buy_threshold` | `26` | `25` |
+| *(no parameter changes)* | - | - |
 
-## 5. Today's ML Predictions for Next Session (`2026-11-24`)
-- **Saved Snapshot:** `/home/runner/work/indian-paper-trader/indian-paper-trader/predictions/predictions_2026-11-23.json`
+## 5. Today's ML Predictions for Next Session (`2026-11-25`)
+- **Saved Snapshot:** `/home/runner/work/indian-paper-trader/indian-paper-trader/predictions/predictions_2026-11-24.json`
 - **Average Out-of-Sample Test Directional Accuracy:** `50.34%`
 - **Average Out-of-Sample Test MAE:** `1.3822%`
 
 | Symbol | Today Close (₹) | Predicted Next Close (₹) | Pred Return % | Direction | Conf % | Action | Target (₹) | Stop-Loss (₹) | Winning Model | Test MAE % (95% CI) | Test Dir Acc % |
 |---|---:|---:|---:|---|---:|---|---:|---:|---|---:|---:|
-| RELIANCE-EQ | 1351.00 | 1350.04 | -0.071% | **NEUTRAL** | 67.2% | `WAIT_FOR_VWAP_BREAKOUT` | 1404.42 | 1315.38 | `RidgeRegression(alpha=40.0)` | 1.400% [1.020, 1.909] | 53.06% |
+| RELIANCE-EQ | 1351.00 | 1350.05 | -0.070% | **NEUTRAL** | 67.2% | `WAIT_FOR_VWAP_BREAKOUT` | 1404.42 | 1315.38 | `RidgeRegression(alpha=40.0)` | 1.400% [1.020, 1.909] | 53.06% |
 | TCS-EQ | 2460.00 | 2458.75 | -0.051% | **NEUTRAL** | 68.4% | `WAIT_FOR_VWAP_BREAKOUT` | 2586.00 | 2376.00 | `GradientBoostedStumps(n=15, lr=0.07)` | 1.399% [1.046, 1.847] | 57.14% |
 | HDFCBANK-EQ | 817.80 | 819.12 | +0.161% | **UP** | 66.4% | `BUY_ON_OPEN_OR_HOLD` | 857.26 | 788.20 | `GradientBoostedStumps(n=60, lr=0.07)` | 1.495% [1.221, 1.811] | 48.98% |
 | INFY-EQ | 1103.40 | 1102.22 | -0.107% | **NEUTRAL** | 67.4% | `WAIT_FOR_VWAP_BREAKOUT` | 1164.51 | 1062.66 | `GradientBoostedStumps(n=25, lr=0.07)` | 1.573% [1.256, 1.937] | 53.06% |
