@@ -41,3 +41,8 @@
 - **Lesson:** Selectivity tightening triggered (win_rate=37.14%, agg_net_pnl=₹-1177.08, max_dd=1.0%, stop_loss_hit=False). Tuned RSI buy floor to 25, RSI momentum cap to 60, and maintained 11.0% risk sizing so winning moves overcome ₹40.00 flat brokerage.
 - **Trailing Ledger:** 3 closed trades reviewed (Win Rate: 33.33%)
 - **Parameter Diff:** no threshold changes
+
+### [2026-11-26T17:25:26+05:30] Quantitative Post-Mortem
+- **Lesson:** Selectivity tightening triggered (win_rate=37.14%, agg_net_pnl=₹-1002.22, max_dd=1.0%, stop_loss_hit=False). Tuned RSI buy floor to 25, RSI momentum cap to 60, and maintained 11.0% risk sizing so winning moves overcome ₹40.00 flat brokerage.
+- **Trailing Ledger:** 3 closed trades reviewed (Win Rate: 33.33%)
+- **Parameter Diff:** no threshold changes
