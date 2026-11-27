@@ -1,5 +1,5 @@
 {
-  "generated_at_ist": "2026-11-26T17:25:31+05:30",
+  "generated_at_ist": "2026-11-27T17:16:58+05:30",
   "data_feed": "NSE Real-Time Market Feed (Angel One SmartAPI / Yahoo Finance .NS)",
   "portfolio": {
     "initial_capital_inr": 100000.0,
@@ -26,252 +26,252 @@
   "invested_stocks": [],
   "performance_curve": [
     {
-      "time": "26 Nov 12:25",
+      "time": "27 Nov 12:25",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 12:30",
+      "time": "27 Nov 12:30",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 12:35",
+      "time": "27 Nov 12:35",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 12:40",
+      "time": "27 Nov 12:40",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 12:45",
+      "time": "27 Nov 12:45",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 12:50",
+      "time": "27 Nov 12:50",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 12:55",
+      "time": "27 Nov 12:55",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 13:00",
+      "time": "27 Nov 13:00",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 13:05",
+      "time": "27 Nov 13:05",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 13:10",
+      "time": "27 Nov 13:10",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 13:15",
+      "time": "27 Nov 13:15",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 13:20",
+      "time": "27 Nov 13:20",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 13:25",
+      "time": "27 Nov 13:25",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 13:30",
+      "time": "27 Nov 13:30",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 13:35",
+      "time": "27 Nov 13:35",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 13:40",
+      "time": "27 Nov 13:40",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 13:45",
+      "time": "27 Nov 13:45",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 13:50",
+      "time": "27 Nov 13:50",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 13:55",
+      "time": "27 Nov 13:55",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 14:00",
+      "time": "27 Nov 14:00",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 14:05",
+      "time": "27 Nov 14:05",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 14:10",
+      "time": "27 Nov 14:10",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 14:15",
+      "time": "27 Nov 14:15",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 14:20",
+      "time": "27 Nov 14:20",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 14:25",
+      "time": "27 Nov 14:25",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 14:30",
+      "time": "27 Nov 14:30",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 14:35",
+      "time": "27 Nov 14:35",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 14:40",
+      "time": "27 Nov 14:40",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 14:45",
+      "time": "27 Nov 14:45",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 14:50",
+      "time": "27 Nov 14:50",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 14:55",
+      "time": "27 Nov 14:55",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 15:00",
+      "time": "27 Nov 15:00",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 15:05",
+      "time": "27 Nov 15:05",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 15:10",
+      "time": "27 Nov 15:10",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 15:15",
+      "time": "27 Nov 15:15",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
       "pnl_inr": 0.0
     },
     {
-      "time": "26 Nov 15:25",
+      "time": "27 Nov 15:25",
       "holdings_value": 0.0,
       "total_equity": 99604.19,
       "invested": 0.0,
@@ -284,22 +284,22 @@
       "short_name": "RELIANCE",
       "yf_ticker": "RELIANCE.NS",
       "token": "2885",
-      "ltp": 1396.2,
-      "timestamp": "2026-11-26T15:25:00+05:30",
+      "ltp": 1382.6,
+      "timestamp": "2026-11-27T15:25:00+05:30",
       "indicators": {
-        "RSI_14": 64.77,
-        "EMA_9": 1395.17,
-        "EMA_21": 1390.22,
-        "VWAP": 1383.43,
-        "ATR_14": 3.62
+        "RSI_14": 56.61,
+        "EMA_9": 1377.91,
+        "EMA_21": 1378.96,
+        "VWAP": 1381.57,
+        "ATR_14": 3.04
       },
       "signal": "HOLD",
       "setup_type": "NONE",
-      "ml_predicted_close": 1401.59,
-      "ml_predicted_return_pct": 0.386,
-      "ml_direction": "UP",
-      "ml_confidence_pct": 67.2,
-      "ml_target_session": "2026-11-27",
+      "ml_predicted_close": 1381.31,
+      "ml_predicted_return_pct": -0.093,
+      "ml_direction": "NEUTRAL",
+      "ml_confidence_pct": 64.6,
+      "ml_target_session": "2026-11-30",
       "ml_model": "GradientBoostedStumps(n=40, lr=0.07)",
       "test_dir_acc_pct": 44.9
     },
@@ -308,22 +308,22 @@
       "short_name": "TCS",
       "yf_ticker": "TCS.NS",
       "token": "11536",
-      "ltp": 2640.3,
-      "timestamp": "2026-11-26T15:25:00+05:30",
+      "ltp": 2572.5,
+      "timestamp": "2026-11-27T15:25:00+05:30",
       "indicators": {
-        "RSI_14": 89.01,
-        "EMA_9": 2617.53,
-        "EMA_21": 2601.18,
-        "VWAP": 2583.55,
-        "ATR_14": 7.41
+        "RSI_14": 30.97,
+        "EMA_9": 2580.95,
+        "EMA_21": 2585.55,
+        "VWAP": 2582.46,
+        "ATR_14": 4.55
       },
       "signal": "HOLD",
       "setup_type": "NONE",
-      "ml_predicted_close": 2642.17,
-      "ml_predicted_return_pct": 0.071,
+      "ml_predicted_close": 2570.13,
+      "ml_predicted_return_pct": -0.092,
       "ml_direction": "NEUTRAL",
-      "ml_confidence_pct": 67.8,
-      "ml_target_session": "2026-11-27",
+      "ml_confidence_pct": 68.0,
+      "ml_target_session": "2026-11-30",
       "ml_model": "GradientBoostedStumps(n=15, lr=0.07)",
       "test_dir_acc_pct": 55.1
     },
@@ -332,22 +332,22 @@
       "short_name": "HDFCBANK",
       "yf_ticker": "HDFCBANK.NS",
       "token": "1333",
-      "ltp": 862.0,
-      "timestamp": "2026-11-26T15:25:00+05:30",
+      "ltp": 857.25,
+      "timestamp": "2026-11-27T15:25:00+05:30",
       "indicators": {
-        "RSI_14": 47.18,
-        "EMA_9": 861.71,
-        "EMA_21": 862.2,
-        "VWAP": 862.51,
-        "ATR_14": 1.56
+        "RSI_14": 29.99,
+        "EMA_9": 859.39,
+        "EMA_21": 860.86,
+        "VWAP": 862.07,
+        "ATR_14": 1.38
       },
       "signal": "HOLD",
       "setup_type": "NONE",
-      "ml_predicted_close": 863.7,
-      "ml_predicted_return_pct": 0.197,
+      "ml_predicted_close": 859.79,
+      "ml_predicted_return_pct": 0.296,
       "ml_direction": "UP",
-      "ml_confidence_pct": 64.5,
-      "ml_target_session": "2026-11-27",
+      "ml_confidence_pct": 65.3,
+      "ml_target_session": "2026-11-30",
       "ml_model": "GradientBoostedStumps(n=60, lr=0.07)",
       "test_dir_acc_pct": 42.86
     },
@@ -356,72 +356,72 @@
       "short_name": "INFY",
       "yf_ticker": "INFY.NS",
       "token": "1594",
-      "ltp": 1183.0,
-      "timestamp": "2026-11-26T15:25:00+05:30",
+      "ltp": 1151.3,
+      "timestamp": "2026-11-27T15:25:00+05:30",
       "indicators": {
-        "RSI_14": 80.28,
-        "EMA_9": 1177.86,
-        "EMA_21": 1172.78,
-        "VWAP": 1166.31,
-        "ATR_14": 2.8
+        "RSI_14": 31.8,
+        "EMA_9": 1154.87,
+        "EMA_21": 1156.9,
+        "VWAP": 1157.7,
+        "ATR_14": 2.04
       },
       "signal": "HOLD",
       "setup_type": "NONE",
-      "ml_predicted_close": 1184.46,
-      "ml_predicted_return_pct": 0.123,
+      "ml_predicted_close": 1151.46,
+      "ml_predicted_return_pct": 0.014,
       "ml_direction": "NEUTRAL",
-      "ml_confidence_pct": 66.0,
-      "ml_target_session": "2026-11-27",
-      "ml_model": "RidgeRegression(alpha=40.0)",
-      "test_dir_acc_pct": 48.98
+      "ml_confidence_pct": 66.7,
+      "ml_target_session": "2026-11-30",
+      "ml_model": "GradientBoostedStumps(n=40, lr=0.07)",
+      "test_dir_acc_pct": 53.06
     },
     {
       "symbol": "ICICIBANK-EQ",
       "short_name": "ICICIBANK",
       "yf_ticker": "ICICIBANK.NS",
       "token": "4963",
-      "ltp": 1611.0,
-      "timestamp": "2026-11-26T15:25:00+05:30",
+      "ltp": 1593.4,
+      "timestamp": "2026-11-27T15:25:00+05:30",
       "indicators": {
-        "RSI_14": 41.98,
-        "EMA_9": 1613.27,
-        "EMA_21": 1614.13,
-        "VWAP": 1620.07,
-        "ATR_14": 2.97
+        "RSI_14": 50.08,
+        "EMA_9": 1592.59,
+        "EMA_21": 1592.96,
+        "VWAP": 1597.0,
+        "ATR_14": 2.46
       },
       "signal": "HOLD",
       "setup_type": "NONE",
-      "ml_predicted_close": 1615.09,
-      "ml_predicted_return_pct": 0.254,
-      "ml_direction": "UP",
-      "ml_confidence_pct": 71.2,
-      "ml_target_session": "2026-11-27",
+      "ml_predicted_close": 1595.55,
+      "ml_predicted_return_pct": 0.135,
+      "ml_direction": "NEUTRAL",
+      "ml_confidence_pct": 66.5,
+      "ml_target_session": "2026-11-30",
       "ml_model": "GradientBoostedStumps(n=15, lr=0.07)",
-      "test_dir_acc_pct": 59.18
+      "test_dir_acc_pct": 48.98
     },
     {
       "symbol": "SBIN-EQ",
       "short_name": "SBIN",
       "yf_ticker": "SBIN.NS",
       "token": "3045",
-      "ltp": 1136.65,
-      "timestamp": "2026-11-26T15:25:00+05:30",
+      "ltp": 1123.9,
+      "timestamp": "2026-11-27T15:25:00+05:30",
       "indicators": {
-        "RSI_14": 36.28,
-        "EMA_9": 1139.67,
-        "EMA_21": 1140.77,
-        "VWAP": 1142.06,
-        "ATR_14": 2.21
+        "RSI_14": 36.64,
+        "EMA_9": 1125.58,
+        "EMA_21": 1126.75,
+        "VWAP": 1131.37,
+        "ATR_14": 1.85
       },
       "signal": "HOLD",
       "setup_type": "NONE",
-      "ml_predicted_close": 1138.33,
-      "ml_predicted_return_pct": 0.148,
-      "ml_direction": "NEUTRAL",
-      "ml_confidence_pct": 63.0,
-      "ml_target_session": "2026-11-27",
-      "ml_model": "GradientBoostedStumps(n=15, lr=0.07)",
-      "test_dir_acc_pct": 38.78
+      "ml_predicted_close": 1125.6,
+      "ml_predicted_return_pct": 0.151,
+      "ml_direction": "UP",
+      "ml_confidence_pct": 64.5,
+      "ml_target_session": "2026-11-30",
+      "ml_model": "GradientBoostedStumps(n=25, lr=0.07)",
+      "test_dir_acc_pct": 42.86
     }
   ],
   "strategy_config": {
@@ -432,6 +432,6 @@
     "stop_loss_pct": 1.2,
     "take_profit_pct": 2.5,
     "risk_per_trade_pct": 11.0,
-    "updated_at": "2026-11-26T17:25:26+05:30"
+    "updated_at": "2026-11-27T17:16:52+05:30"
   }
 }
